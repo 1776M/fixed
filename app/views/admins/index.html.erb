@@ -1,0 +1,9 @@
+<h1>All admin</h1>
+
+<ul class="admins">
+  <% @admin.each do |admin| %>
+    <li>
+      <%= link_to admin.ebitda_risk, admin %>
+    </li>
+  <% end %>
+</ul>

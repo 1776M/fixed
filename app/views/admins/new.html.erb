@@ -1,0 +1,23 @@
+<h1>Sign up</h1>
+
+<%= form_for(@admin) do |f| %>
+  <div class="field">
+    <%= f.label :cost_of_debt %><br />
+    <%= f.text_field :cost_of_debt %>
+  </div>
+  <div class="field">
+    <%= f.label :risk_premium %><br />
+    <%= f.text_field :risk_premium %>
+  </div>
+  <div class="field">
+    <%= f.label :interest_rate_risk %><br />
+    <%= f.text_field :interest_rate_risk %>
+  </div>
+  <div class="field">
+    <%= f.label :ebitda_risk %><br />
+    <%= f.text_field :ebitda_risk %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>

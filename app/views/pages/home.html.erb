@@ -1,0 +1,16 @@
+<h1>Sign up</h1>
+
+<%= form_for(@finance) do |f| %>
+  <div class="field">
+    <%= f.label :ebitda %><br />
+    <%= f.text_field :ebitda %>
+  </div>
+  <div class="field">
+    <%= f.label :debt %><br />
+    <%= f.text_field :debt %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+

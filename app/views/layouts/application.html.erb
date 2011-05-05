@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A simple fixed float</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<%= link_to "home", root_path %>
+<%= yield %>
+<%= link_to "inputs", input_path %>
+
+</body>
+</html>

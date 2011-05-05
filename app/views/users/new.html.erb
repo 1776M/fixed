@@ -1,0 +1,19 @@
+<h1>Sign up</h1>
+
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :fixed %><br />
+    <%= f.text_field :fixed %>
+  </div>
+  <div class="field">
+    <%= f.label :float %><br />
+    <%= f.text_field :float %>
+  </div>
+  <div class="field">
+    <%= f.label :count %><br />
+    <%= f.text_field :count %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
